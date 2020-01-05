@@ -17,3 +17,76 @@
   grid-template-columns: repeat(4, 1fr);
   
 }
+
+
+nav {
+  grid-area: nav;
+}
+
+.spread {
+  grid-area: spread;
+}
+
+.summer-house {
+  grid-area: summer;
+}
+
+.renovated-house {
+  grid-area: renovated;
+}
+
+.brick-house {
+  grid-area: brick;
+}
+
+.barn-house {
+  grid-area: barn;
+}
+
+.summer-house2 {
+  grid-area: summer2;
+}
+
+.renovated-house2 {
+  grid-area: renovated2;
+}
+
+.brick-house2 {
+  grid-area: brick2;
+}
+
+.barn-house2 {
+  grid-area: barn2;
+}
+
+.about {
+  grid-area: about;
+}
+
+.staff1 {
+  grid-area: staff1;
+}
+
+.staff2 {
+  grid-area: staff2;
+}
+
+.staff3 {
+  grid-area: staff;
+}
+
+.staff4 {
+  grid-area: staff4;
+}
+
+form {
+  grid-area: form;
+}
+
+.map {
+  grid-area: map;
+}
+
+footer {
+  grid-area: footer;
+}

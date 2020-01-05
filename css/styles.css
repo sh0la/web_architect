@@ -1,0 +1,19 @@
+
+.grid {
+  display: grid;
+  max-width: 960px;
+  position: relative;
+  margin: auto;
+  grid-template-areas:  "nav nav nav nav"
+                        "spread spread spread spread"
+                        "summer renovated brick barn"
+                        "summer2 renovated2 brick2 barn2"
+                        "about about about about"
+                        "staff1 staff2 staff3 staff4"
+                        "form form form form"
+                        "map map map map"
+                        "footer footer footer footer";
+  grid-template-rows: 10px 100px 50px 50px 30px 50px 60px 100px 20px;
+  grid-template-columns: repeat(4, 1fr);
+  
+}

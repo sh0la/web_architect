@@ -1,23 +1,30 @@
 
+
 .grid {
   display: grid;
-  max-width: 960px;
-  position: relative;
-  margin: auto;
-  grid-template-areas:  "nav nav nav nav"
-                        "spread spread spread spread"
-                        "summer renovated brick barn"
-                        "summer2 renovated2 brick2 barn2"
-                        "about about about about"
-                        "staff1 staff2 staff3 staff4"
-                        "form form form form"
-                        "map map map map"
-                        "footer footer footer footer";
-  grid-template-rows: 10px 100px 50px 50px 30px 50px 60px 100px 20px;
-  grid-template-columns: repeat(4, 1fr);
-  
+  grid-template-areas: "nav"
+                       "spread"
+                       "summer"
+                       "renovated"
+                       "brick"
+                       "barn"
+                       "summer2"
+                       "renovated2"
+                       "brick2"
+                       "barn2"
+                       "form"
+                       "map"
+                       "footer";
+  grid-template-columns: minmax(300, auto)
+
+
 }
 
+
+
+img {
+  width: 375px;
+}
 
 nav {
   grid-area: nav;
@@ -93,9 +100,43 @@ footer {
 
 .box {
   position: relative;
-  width: 20%;
+
   top: 0;
   left: 0;
   background-color: black;
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  
+    
+  .grid {
+    display: grid;
+    
+    /* grid-template-columns: repeat(auto-fit, minmax(150, 1fr));  */
+    grid: 5px;
+    
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 10px 100px 50px 50px 30px 50px 60px 100px 20px; */
+    
+    grid-template-areas:  "nav nav nav nav"
+                          "spread spread spread spread"
+                          "summer renovated brick barn"
+                          "summer2 renovated2 brick2 barn2"
+                          "about about about about"
+                          "staff1 staff2 staff3 staff4"
+                          "form form form form"
+                          "map map map map"
+                          "footer footer footer footer";
+
+    
+  
+  }
+ 
+}
+
+/* 
+
+@media screen and (min-width: 980px) {
+  
+} */
